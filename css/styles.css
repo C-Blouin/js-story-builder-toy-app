@@ -1,0 +1,97 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+/* Set default body styles */
+html {
+  font-size: 100%;
+  line-height: 1.4;
+  background-color: #0e0d0c;
+  color: #ffffff;
+  font-family: "Comfortaa", "Times New Roman", cursive;
+}
+
+/* Center document content with auto margins and a relative width. */
+body {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+/* Start of Heading Styles */
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h1,
+h2 {
+  color: #d8d0ca;
+}
+/* End of Heading Styles */
+
+p,
+button {
+  font-size: 1.2rem;
+}
+
+/* Set all children inside the div html elements to display inline-block, the content will contain 20% of the containers width.  */
+div * {
+  display: inline-block;
+  width: 20%;
+}
+
+/* 
+Start of Buttons Styles 
+
+Visual Hover Indications to let the user know what button they are clicking.
+*/
+button {
+  width: 20%;
+  padding: 20px 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #a1b49c;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #3f3a36;
+  color: #a1b49c;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+section:nth-of-type(2) button {
+  margin: 0;
+}
+
+section:nth-of-type(2) button:nth-of-type(2),
+section:nth-of-type(2) button:nth-of-type(3) {
+  margin-left: 10px;
+}
+
+section:nth-of-type(2) button:nth-of-type(3) {
+  background-color: #3f3a36;
+}
+section:nth-of-type(2) button:nth-of-type(3):hover {
+  background-color: #a1b49c;
+  color: #3f3a36;
+}
+
+/* End of Buttons Styles */
+
+/* Start of Section Elements Styles */
+section:nth-of-type(2) h2 {
+  padding: 20px;
+}
+
+section:nth-of-type(2) p {
+  font-size: 1.8rem;
+  color: #cdddc9;
+}
+
+/* End of Section Elements Styles */

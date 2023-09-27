@@ -1,0 +1,56 @@
+<!-- 
+JavaScript Assignment 1 - 
+Christopher Blouin
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment 1 | Story Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to normalize before applying custom styles -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Link to external JavaScript utilizing the defer attribute, letting the html document load before loading any JavaScript. -->
+    <script src="js/storymaker.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Story Builder</h1>
+      <section id="buildSentence">
+        <!-- Set up a button for each part of the sentence, and an empty paragraph to output the currently chosen word -->
+        <h2>Click The Buttons to Build a Sentence</h2>
+        <div>
+          <button id="nounOne">Choose First Noun</button>
+          <p id="selectedNounOne"></p>
+        </div>
+        <div>
+          <button id="verb">Choose Verb</button>
+          <p id="selectedVerb"></p>
+        </div>
+        <div>
+          <button id="adjective">Choose Adjective</button>
+          <p id="selectedAdjective"></p>
+        </div>
+        <div>
+          <button id="nounTwo">Choose Second Noun</button>
+          <p id="selectedNounTwo"></p>
+        </div>
+        <div>
+          <button id="setting">Choose Setting</button>
+          <p id="selectedSetting"></p>
+        </div>
+      </section>
+      <section id="showSentence">
+        <!-- Set up a button to build the completed sentence, and an empty paragraph to output it to the screen -->
+        <h2>View Your Custom or Random Sentence</h2>
+        <button id="viewSentence">View Sentence</button>
+        <!-- Set up a button to build a randomly-generated sentence, and an empty paragraph to output it to the screen -->
+        <button id="randomSentence">Random Sentence</button>
+        <button id="resetStory">Reset Story</button>
+        <!-- The user built sentence or random sentence buttons will interact with this paragraph containing an id of displaySentence. -->
+        <p id="displaySentence"></p>
+      </section>
+    </main>
+  </body>
+</html>
